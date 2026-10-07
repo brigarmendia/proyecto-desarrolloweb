@@ -1,6 +1,9 @@
 # BL Indumentaria
 
 Sitio web de una tienda de ropa ficticia, desarrollado como proyecto integrador del curso de Desarrollo Web de Coderhouse.
+## Ver el sitio
+
+[https://brigarmendia.github.io/proyecto-desarrolloweb/](https://brigarmendia.github.io/proyecto-desarrolloweb/)
 
 ## Páginas
 
