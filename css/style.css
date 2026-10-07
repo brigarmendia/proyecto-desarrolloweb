@@ -304,6 +304,23 @@ textarea:focus {
     outline: 3px solid #e86a73;
     outline-offset: 2px;
 }
+/*TABLET*/
+@media (min-width: 768px) {
+    .ContenidoPrincipal section {
+        padding: 50px 60px;
+    }
+    .ContenidoPrincipal .ListaProductos {
+        grid-template-columns: repeat (2, 1fr);
+    }
+    .ContenidoPrincipal section p,
+    .accordion,
+    form {
+        max-width: 650px;
+    }
+    .PiePágina {
+        flex-direction: row;
+    }
+}
 /*DESKTOP*/
 @media (min-width: 1024px) {
   
