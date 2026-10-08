@@ -1,0 +1,21 @@
+// ===== COLORES =====
+$color-primario: #6c137e;    // violeta
+$color-secundario: #e4e41e;  // amarillo
+$color-acento: #e86a73;      // rosa
+$color-blanco: #ffffff;
+$color-lila: #f3e5f5;
+$sombra: rgba(0, 0, 0, 0.2);
+
+// ===== TIPOGRAFÍA =====
+$fuente-principal: 'Libre Baskerville', serif;
+
+// ===== BORDES Y ANIMACIÓN =====
+$radio-borde: 8px;
+$transicion: 0.3s;
+
+// ===== BREAKPOINTS =====
+$tablet: 768px;
+$desktop: 1024px;
+// ===== UTILIDADES =====
+@use "utilities/variables";
+@use "utilities/mixins";

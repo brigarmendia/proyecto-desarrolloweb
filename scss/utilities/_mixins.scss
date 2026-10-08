@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+// Media queries
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+// Fondo violeta con letra amarilla (se repite en muchas secciones)
+@mixin bloque-violeta {
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+// Columna flexible con espacio entre elementos
+@mixin flex-columna($espacio: 16px) {
+    display: flex;
+    flex-direction: column;
+    gap: $espacio;
+}
