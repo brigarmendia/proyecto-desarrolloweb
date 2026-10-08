@@ -1,117 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tienda de ropa</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de ropa</title>
 
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="./css/style.css">    
-    </head>
-    <body>
-        <header class="Encabezado">
-          <nav class="navbar navbar-expand-lg Navegación" data-bs-theme="dark">
-              <div class="container-fluid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="Encabezado">
+        <nav class="navbar navbar-expand-lg Navegación" data-bs-theme="dark">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">BL Indumentaria</a>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
-                  <span class="navbar-toggler-icon"></span>
-                   </button>
-                     <div class="collapse navbar-collapse" id="menuPrincipal">
-                       <ul class="navbar-nav ms-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/preguntas.html">Preguntas frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/preguntas.html">Preguntas frecuentes</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
-                       </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="ContenidoPrincipal Inicio">
+        <section class="Hero">
+            <h1>BL Indumentaria</h1>
+            <p>Encontrá tu estilo</p>
+        </section>
+        <section class="Galeria">
+            <h2>Nuestras prendas</h2>
+            <div id="carouselPrendas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPrendas" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Buzo"></button>
+                    <button type="button" data-bs-target="#carouselPrendas" data-bs-slide-to="1"
+                        aria-label="Remera"></button>
+                    <button type="button" data-bs-target="#carouselPrendas" data-bs-slide-to="2"
+                        aria-label="Jogging"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagen/buzo.jpeg" class="d-block w-100" alt="Buzo BL Indumentaria">
                     </div>
-                 </div>
-          </nav>
-        </header>
-       <main class="ContenidoPrincipal Inicio">
-            <section class="Hero">
-                <h1>BL Indumentaria</h1>
-                <p>Encontrá tu estilo</p>
-            </section>
-            <section class="Galeria">
-    <h2>Nuestras prendas</h2>
-    <div id="carouselPrendas" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselPrendas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Buzo"></button>
-            <button type="button" data-bs-target="#carouselPrendas" data-bs-slide-to="1" aria-label="Remera"></button>
-            <button type="button" data-bs-target="#carouselPrendas" data-bs-slide-to="2" aria-label="Jogging"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="imagen/buzo.jpeg" class="d-block w-100" alt="Buzo BL Indumentaria">
+                    <div class="carousel-item">
+                        <img src="imagen/remera.jpeg" class="d-block w-100" alt="Remera BL Indumentaria">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/jogging.jpeg" class="d-block w-100" alt="Jogging BL Indumentaria">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrendas"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPrendas"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-            <div class="carousel-item">
-                <img src="imagen/remera.jpeg" class="d-block w-100" alt="Remera BL Indumentaria">
-            </div>
-            <div class="carousel-item">
-                <img src="imagen/jogging.jpeg" class="d-block w-100" alt="Jogging BL Indumentaria">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrendas" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPrendas" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
-</section>
-            <section class="SobreBl">
-                <h2>Sobre BL Indumentaria</h2>
-                <p>En BL Indumentaria ofrecemos prendas cómodas, modernas y versátiles para acopañarte todos los días.</p>
-            </section>
-            <section class="Imagen">
-                <h2>Tu estilo, todos los días.</h2>
-                <article>
-                     <p>Todos los medios de pago - 3 cuotas sin interés</p>
-                     <button type="button" class="BotonBL" data-bs-toggle="modal" data-bs-target="#modalPagos">
-                        Ver medios de pago
-                     </button>
-                     <figure>
-                         <img src="imagen/logo.jpeg" alt="logo BL Indumentaria">
-                     </figure>
-                 </article>
-            </section>
-        </main>
-        <footer class="PiePágina">
-                 <p>© 2026 BL Indumentaria</p>
-             <p>
-                 <a class="Redes" href="https://www.instagram.com/" target="_blank">Instagram</a>
-                 <a class="Redes" href="https://www.facebook.com/" target="_blank">Facebook</a>
-             </p>
-        </footer>
-        <div class="modal fade" id="modalPagos" tabindex="-1" aria-labelledby="tituloModalPagos" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="tituloModalPagos">Medios de pago</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>Tarjetas de crédito: 3 cuotas sin interés</li>
-                    <li>Tarjetas de débito</li>
-                    <li>Transferencia bancaria</li>
-                    <li>Mercado Pago</li>
-                    <li>Efectivo</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="BotonBL" data-bs-dismiss="modal">Cerrar</button>
+        </section>
+        <section class="SobreBl">
+            <h2>Sobre BL Indumentaria</h2>
+            <p>En BL Indumentaria ofrecemos prendas cómodas, modernas y versátiles para acopañarte todos los días.</p>
+        </section>
+        <section class="Imagen">
+            <h2>Tu estilo, todos los días.</h2>
+            <article>
+                <p>Todos los medios de pago - 3 cuotas sin interés</p>
+                <button type="button" class="BotonBL" data-bs-toggle="modal" data-bs-target="#modalPagos">
+                    Ver medios de pago
+                </button>
+                <figure>
+                    <img src="imagen/logo.jpeg" alt="logo BL Indumentaria">
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer class="PiePágina">
+        <p>© 2026 BL Indumentaria</p>
+        <p>
+            <a class="Redes" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a class="Redes" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </p>
+    </footer>
+    <div class="modal fade" id="modalPagos" tabindex="-1" aria-labelledby="tituloModalPagos" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="tituloModalPagos">Medios de pago</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Tarjetas de crédito: 3 cuotas sin interés</li>
+                        <li>Tarjetas de débito</li>
+                        <li>Transferencia bancaria</li>
+                        <li>Mercado Pago</li>
+                        <li>Efectivo</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="BotonBL" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
