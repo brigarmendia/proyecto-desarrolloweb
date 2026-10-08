@@ -18,6 +18,7 @@ Sitio web de una tienda de ropa ficticia, desarrollado como proyecto integrador 
 - HTML5 semántico
 - CSS3: Flexbox, CSS Grid, media queries (mobile-first) y pseudoclases
 - Bootstrap 5.3: navbar, carousel, modal y acordeón
+- SCSS: variables, mixins, nesting y partials (compilado con `sass scss/main.scss css/style.css`)
 
 ## Cómo verlo
 
