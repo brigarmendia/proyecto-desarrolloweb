@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+
+.Galeria {
+    .carousel {
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
+
+        img {
+            aspect-ratio: 5 / 4;
+            object-fit: cover;
+            border-radius: $radio-borde;
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: $color-primario;
+        border-radius: 50%;
+        background-size: 50%;
+        padding: 20px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: $color-primario;
+    }
+}

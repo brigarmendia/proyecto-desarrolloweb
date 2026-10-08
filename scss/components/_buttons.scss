@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+
+.BotonBL {
+    background-color: $color-primario;
+    color: $color-secundario;
+    border: 2px solid $color-primario;
+    border-radius: $radio-borde;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color $transicion, color $transicion, transform 0.1s;
+
+    &:hover,
+    &:focus {
+        background-color: $color-acento;
+        color: $color-blanco;
+    }
+
+    &:focus {
+        outline: 3px solid $color-secundario;
+        outline-offset: 2px;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}

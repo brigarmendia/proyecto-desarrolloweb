@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.modal-header {
+    @include bloque-violeta;
+
+    .btn-close {
+        filter: invert(1);
+    }
+}
+
+.modal-body {
+    color: $color-primario;
+
+    ul {
+        padding-left: 20px;
+    }
+}

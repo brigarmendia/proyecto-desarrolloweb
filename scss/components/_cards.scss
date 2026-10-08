@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Grilla de productos
+.ContenidoPrincipal .ListaProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// Card de producto
+.Card {
+    @include flex-columna(12px);
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    border: 2px solid $color-primario;
+    border-radius: $radio-borde;
+    align-items: center;
+    text-align: center;
+    transition: transform $transicion, box-shadow $transicion;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px $sombra;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
