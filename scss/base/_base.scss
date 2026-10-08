@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ===== RESET =====
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+// ===== BODY =====
+body {
+    font-family: $fuente-principal;
+    @include bloque-violeta;
+}
