@@ -310,7 +310,7 @@ textarea:focus {
         padding: 50px 60px;
     }
     .ContenidoPrincipal .ListaProductos {
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .ContenidoPrincipal section p,
     .accordion,
