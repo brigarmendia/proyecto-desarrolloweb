@@ -1,0 +1,95 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// ===== CONTENEDOR PRINCIPAL =====
+.ContenidoPrincipal {
+    background-color: $color-secundario;
+    color: $color-primario;
+    margin-bottom: 40px;
+
+    section {
+        @include flex-columna;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 20px;
+
+        @include tablet {
+            padding: 50px 60px;
+
+            p {
+                max-width: 650px;
+            }
+        }
+
+        @include desktop {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+}
+
+// ===== SECCIONES CON FONDO VIOLETA =====
+.SobreBl,
+.Productos,
+.Preguntas,
+.PresentaciónNosotros,
+.Contacto {
+    @include bloque-violeta;
+}
+
+// ===== LOGOS =====
+.Imagen img,
+.PresentaciónNosotros img,
+.Contacto img,
+.Preguntas img {
+    width: 100%;
+    max-width: 200px;
+}
+
+// ===== GRILLA DEL INDEX =====
+.Inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "hero"
+        "galeria"
+        "sobre"
+        "imagen";
+
+    .Hero {
+        grid-area: hero;
+    }
+
+    .Galeria {
+        grid-area: galeria;
+    }
+
+    .SobreBl {
+        grid-area: sobre;
+    }
+
+    .Imagen {
+        grid-area: imagen;
+    }
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "galeria galeria"
+            "sobre imagen";
+    }
+}
+
+// ===== SECCIÓN "TU ESTILO" DEL INDEX =====
+.Imagen {
+    background-color: $color-secundario;
+    color: $color-primario;
+
+    article {
+        @include flex-columna(30px);
+        justify-content: space-between;
+        align-items: center;
+    }
+}
