@@ -4,3 +4,7 @@
 // ===== BASE =====
 @use "base/base";
 @use "base/tipografia";
+// ===== LAYOUT =====
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";

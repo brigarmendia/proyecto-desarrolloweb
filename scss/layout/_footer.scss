@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.PiePágina {
+    @include bloque-violeta;
+    @include flex-columna(12px);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 40px;
+    margin-top: 20px;
+
+    p:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    @include tablet {
+        flex-direction: row;
+    }
+}
+
+// Links de redes sociales
+.Redes {
+    color: $color-acento;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color $transicion;
+
+    &:hover,
+    &:focus {
+        color: $color-secundario;
+    }
+
+    &:active {
+        color: $color-blanco;
+    }
+}
