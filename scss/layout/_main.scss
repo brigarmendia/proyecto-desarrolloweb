@@ -93,3 +93,15 @@
         align-items: center;
     }
 }
+
+// ===== GRILLA DE PÁGINAS SECUNDARIAS (nosotros y preguntas) =====
+.Secundaria {
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        > section:first-child {
+            grid-column: 1 / -1;
+        }
+    }
+}

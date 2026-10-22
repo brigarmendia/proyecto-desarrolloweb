@@ -141,6 +141,16 @@ p {
   align-items: center;
 }
 
+@media (min-width: 1024px) {
+  .Secundaria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Secundaria > section:first-child {
+    grid-column: 1/-1;
+  }
+}
+
 .PiePágina {
   background-color: #6c137e;
   color: #e4e41e;
