@@ -25,3 +25,7 @@
     flex-direction: column;
     gap: $espacio;
 }
+// Animación con nombre, duración y retraso
+@mixin animar($nombre, $duracion: 0.6s, $retraso: 0s) {
+    animation: $nombre $duracion ease-out $retraso both;
+}
