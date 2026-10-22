@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -41,7 +42,7 @@
             <h1>BL Indumentaria</h1>
             <p>Encontrá tu estilo</p>
         </section>
-        <section class="Galeria">
+        <section class="Galeria" data-aos="fade-up">
             <h2>Nuestras prendas</h2>
             <div id="carouselPrendas" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -75,11 +76,11 @@
                 </button>
             </div>
         </section>
-        <section class="SobreBl">
+        <section class="SobreBl" data-aos="fade-up">
             <h2>Sobre BL Indumentaria</h2>
             <p>En BL Indumentaria ofrecemos prendas cómodas, modernas y versátiles para acopañarte todos los días.</p>
         </section>
-        <section class="Imagen">
+        <section class="Imagen" data-aos="fade-up" data-aos-delay="150">
             <h2>Tu estilo, todos los días.</h2>
             <article>
                 <p>Todos los medios de pago - 3 cuotas sin interés</p>
@@ -122,6 +123,13 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
