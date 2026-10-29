@@ -1,9 +1,10 @@
 # BL Indumentaria
 
 Sitio web de una tienda de ropa ficticia, desarrollado como proyecto integrador del curso de Desarrollo Web de Coderhouse.
+
 ## Ver el sitio
 
-[https://brigarmendia.github.io/proyecto-desarrolloweb/](https://brigarmendia.github.io/proyecto-desarrolloweb/)
+🔗 **Sitio publicado en Netlify:** [https://bl-indumentaria.netlify.app](https://bl-indumentaria.netlify.app)
 
 ## Páginas
 
@@ -18,7 +19,9 @@ Sitio web de una tienda de ropa ficticia, desarrollado como proyecto integrador 
 - HTML5 semántico
 - CSS3: Flexbox, CSS Grid, media queries (mobile-first) y pseudoclases
 - Bootstrap 5.3: navbar, carousel, modal y acordeón
-- SCSS: variables, mixins, nesting y partials (compilado con `sass scss/main.scss styles/style.css`)
+- SCSS: variables, mixins con parámetros, extend, operadores, nesting y partials (compilado con `sass scss/main.scss styles/style.css`)
+- Animaciones: keyframes propios y librería AOS
+- Deploy: Netlify (conectado al repositorio de GitHub)
 
 ## Cómo verlo
 
