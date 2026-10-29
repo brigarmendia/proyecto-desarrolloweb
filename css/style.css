@@ -133,6 +133,10 @@ p {
   background-color: #e4e41e;
   color: #6c137e;
 }
+.Imagen .Eslogan {
+  font-size: 28px;
+  font-weight: 700;
+}
 .Imagen article {
   display: flex;
   flex-direction: column;
@@ -311,6 +315,10 @@ p {
 }
 .modal-header .btn-close {
   filter: invert(1);
+}
+.modal-header .modal-title {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .modal-body {
