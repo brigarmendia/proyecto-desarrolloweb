@@ -88,6 +88,11 @@
     background-color: $color-secundario;
     color: $color-primario;
 
+    .Eslogan {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
     article {
         @include flex-columna(30px);
         justify-content: space-between;
