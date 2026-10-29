@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../utilities/variables" as *;
 
 .BotonBL {
@@ -5,7 +6,7 @@
     color: $color-secundario;
     border: 2px solid $color-primario;
     border-radius: $radio-borde;
-    padding: 10px 20px;
+    padding: math.div($espacio-base, 2) $espacio-base;
     font-weight: 700;
     cursor: pointer;
     transition: background-color $transicion, color $transicion, transform 0.1s;

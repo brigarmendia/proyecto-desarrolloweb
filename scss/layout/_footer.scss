@@ -7,8 +7,8 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 20px 40px;
-    margin-top: 20px;
+    padding: $espacio-base ($espacio-base * 2);
+    margin-top: $espacio-base;
 
     p:last-child {
         display: flex;

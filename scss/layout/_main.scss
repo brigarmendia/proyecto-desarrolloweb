@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -5,17 +6,17 @@
 .ContenidoPrincipal {
     background-color: $color-secundario;
     color: $color-primario;
-    margin-bottom: 40px;
+    margin-bottom: $espacio-base * 2;
 
     section {
         @include flex-columna;
         align-items: center;
         text-align: center;
-        padding: 40px;
-        margin-bottom: 20px;
+        padding: $espacio-base * 2;
+        margin-bottom: $espacio-base;
 
         @include tablet {
-            padding: 50px 60px;
+            padding: ($espacio-base * 2.5) ($espacio-base * 3);
 
             p {
                 max-width: 650px;
@@ -100,7 +101,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        > section:first-child {
+        >section:first-child {
             grid-column: 1 / -1;
         }
     }
